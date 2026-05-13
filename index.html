@@ -2,11 +2,51 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Landing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Лендинг</title>
+    <!-- Подключаем твой файл стилей -->
     <link rel="stylesheet" href="style_web.css">
 </head>
 <body>
-    <h1 style="color: red; text-align: center; margin-top: 50px;">ЕСЛИ ТЫ ЭТО ВИДИШЬ — МЫ ПОЧИНИЛИ ГЛАВНУЮ ОШИБКУ</h1>
-    <p style="text-align: center;">Теперь браузер видит этот файл как сайт, а не как текст.</p>
+
+    <div class="b-container">
+        <!-- Блок с картинками товара -->
+        <div class="b-buy-boximg">
+            <img src="1.jpg" class="b-img-1" alt="Картинка 1">
+            <img src="2.jpg" class="b-img-2" alt="Картинка 2">
+            <img src="3.jpg" class="b-img-3" alt="Картинка 3">
+        </div>
+
+        <!-- Блок с ценой -->
+        <div class="price-box">
+            <div class="old_price">5000 руб.</div>
+            <div class="new_price">1990 руб.</div>
+        </div>
+
+        <!-- Форма заказа -->
+        <div class="b-buy-boxform" style="opacity: 1;"> <!-- Сделал видимым -->
+            <form class="b-buy-form">
+                <div class="b-buy-selectbox">
+                    <select class="b-buy-select">
+                        <option value="1">Выберите страну</option>
+                        <option value="2">Россия</option>
+                        <option value="3">Казахстан</option>
+                    </select>
+                </div>
+                
+                <input type="text" class="b-buy-input" placeholder="Ваше имя">
+                <input type="tel" class="b-buy-input" placeholder="Номер телефона">
+                
+                <button type="submit" class="b-buy-button">
+                    <img src="4.jpg" alt="ЗАКАЗАТЬ" style="width: 100%;">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="b-p">© 2026 Все права защищены</div>
+    </footer>
+
 </body>
 </html>
